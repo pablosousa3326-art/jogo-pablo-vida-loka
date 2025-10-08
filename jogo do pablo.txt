@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jogo da Memória - Funções Orgânicas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Jogo: Funções Orgânicas</h1>
+    <p class="instructions">
+      Clique no nome que corresponde à estrutura mostrada. Se errar, vai aparecer a resposta certa e ela será revisada depois.
+    </p>
+
+    <div id="card">
+      <div class="structure-label">Estrutura:</div>
+      <div id="structure" class="structure"></div>
+    </div>
+
+    <div id="options" class="options"></div>
+
+    <div id="feedback" class="feedback" aria-live="polite"></div>
+
+    <div class="controls">
+      <div id="progress">Pergunta <span id="current">0</span> / <span id="total">0</span></div>
+      <button id="startBtn">Iniciar Jogo</button>
+      <button id="retryMissedBtn" class="hidden">Rever apenas erros</button>
+    </div>
+
+    <div id="summary" class="summary hidden"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
